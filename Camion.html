@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cacamiones</title>
+  <link rel="stylesheet" href="Camion.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="logo-space">
+    <img src="lumbre.jpeg" alt="Duchy of Cornwall" class="logo" />
+      </div>
+      <nav class="main-nav">
+        <a href="servicio.html">Servicio al cliente</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="Garantias.html">Garantías</a>
+        <a href="puntitos.html">Puntos de partida</a>
+        <a href="reservas.html">Reservas</a>
+      </nav>
+      <div class="search-age">
+        <input id="searchBox" type="search" placeholder="Buscar boletos..." />
+      </div>
+    </div>
+  </header>
+
+ <main class="main-section">
+  <section class="booking-box">
+    <h2>Compra tu boleto</h2>
+
+    <form class="form-grid">
+      <label>Edad:
+        <input type="number" name="edad" min="1" required placeholder="Ej. 18">
+      </label>
+
+      <label>Tipo de boleto:
+        <select name="tipo" required>
+          <option value="">Selecciona...</option>
+          <option value="ida">Solo ida</option>
+          <option value="redondo">Ida y regreso</option>
+        </select>
+      </label>
+
+    <label>Boleto:
+        <select name="Boleto" required>
+          <option value="">Selecciona infantil...</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+
+
+      <label>Cantidad:
+        <input type="number" name="cantidad" min="1" required placeholder="Ej. 1">
+      </label>
+
+      <label>Cantidad de bolteos inf:
+        <input type="number" name="cantidad" min="1" required placeholder="Ej. 1">
+      </label>
++
+      <label>Lugar de salida:
+        <input type="text" name="salida" required placeholder="Ej. Guadalajara">
+      </label>
+
+      <label>Lugar al que deseo llegar:
+        <input type="text" name="destino" required placeholder="Ej. Ciudad de México">
+      </label>
+
+      <label>Descuento:
+        <select name="descuento" required>
+          <option value="">Selecciona...</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+
+      
+      <input type="checkbox" id="mostrarTexto">
+
+      <label for="mostrarTexto" class="primary">Comprar boleto</label>
+
+  
+      <p class="texto-compra">🎟️ Boleto comprado con éxito</p>
+    </form>
+  </section>
+</main>
+  
+
+  <footer class="site-footer">
+    <p>Cacamiones - Tel: +52 346 108 0741 • Email: Angelgalv999@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <center>
+  <img src="lumbre.jpeg" alt="Duchy of Cornwall" class="logo" />
+</center>
+  
+     
+
+      <p>Precio de los boletos:</p>
+      <p>Infantil: $50(Solo ida)</p>
+      <p>Infantil (Ida y regreso: $100)</p>
+      <p>Adulto: $150(Solo ida)</p>
+      <p>Adulto: $300(Ida y regreso)</p>
+      <p>Vejestotios:75(Con descuento,solo ida)</p>
+      <p>Vejestotios:100(Sin descuento,solo ida)</p>
+      <p>Vejestotios:125(Con descuento,ida y regreso)</p>
+      <p>Vejestotios:150(Sin descuento,ida y regreso)</p>
+</body>
+</html>
