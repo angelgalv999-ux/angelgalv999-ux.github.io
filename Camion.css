@@ -1,0 +1,196 @@
+:root{
+  --accent:#143E82;
+  --pink:#F7CBD4;
+  --blue:#0C2C63;
+  --white:#fff;
+  --gray:#666;
+  --shadow:0 6px 20px rgba(0,0,0,0.15);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:#fdfdfd;
+  color:#222;
+}
+
+/* -------- ENCABEZADO -------- */
+.topbar{
+  background:var(--pink);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 20px;
+  border-bottom:4px solid var(--blue);
+}
+
+.logo-space img{
+  width:140px;
+  height:40px;
+  background:#fff;
+  border-radius:6px;
+}
+
+.main-nav a{
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:600;
+  margin:0 10px;
+}
+
+.search-age input{
+  padding:6px 10px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+/* -------- SECCIÓN PRINCIPAL -------- */
+.main-section{
+  background:var(--blue);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 0;
+}
+
+.booking-box{
+  background:var(--white);
+  color:#222;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:var(--shadow);
+  text-align:center;
+  width:90%;
+  max-width:600px;
+}
+
+.form-grid{
+  display:flex;
+  justify-content:space-around;
+  margin:20px 0;
+  flex-wrap:wrap;
+}
+
+label{
+  display:flex;
+  flex-direction:column;
+  font-weight:600;
+  color:var(--blue);
+  margin:5px;
+}
+
+input, select{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  width:150px;
+}
+
+.primary{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+.list{
+  list-style:none;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:15px;
+}
+
+.list li{
+  background:#e5e9ff;
+  color:#111;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.list li:hover{
+  background:#cdd8ff;
+}
+
+.hidden{display:none}
+
+/* -------- OVERLAY DE MENSAJE -------- */
+.overlay{
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.overlay-content{
+  background:white;
+  color:#111;
+  text-align:center;
+  padding:30px 40px;
+  border-radius:10px;
+  box-shadow:var(--shadow);
+  max-width:400px;
+}
+
+/* -------- FOOTER -------- */
+.site-footer{
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+  color:#333;
+  border-top:1px solid #ccc;
+}
+
+/* -------- PÁGINAS SECUNDARIAS -------- */
+.page-formal{
+  max-width:900px;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:var(--shadow);
+}
+
+.page-formal h2{
+  text-align:center;
+  color:var(--accent);
+}
+
+.page-formal img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:6px;
+  margin-bottom:20px;
+}
+#mostrarTexto {
+  display: none;
+}
+
+.texto-compra {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Solo se muestra el texto si el formulario está completo y el checkbox está marcado */
+form:valid #mostrarTexto:checked ~ .texto-compra {
+  display: block;}
+img{
+
+  width:300px ;
+  height:300x ;
+}
